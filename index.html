@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" type="image" href="./images/hackathon.png" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <title>Ease the Error 3.0</title>
+</head>
+
+<body>
+  <div id="preloader"></div>
+  <section id="main">
+    <header>
+      <nav class="navbar sticky-top navbar-expand-md navbar-light" style="background-color: rgba(255, 255, 255, 0.3)">
+        <div class="container">
+          <a href="#" class="navbar-brand mb-0 h1">
+            <img class="d-inline-block align-top" src="./images/svce-removebg-preview.png" width="100"
+              height="100" style="color: black" id="logo-svce" />
+            <img class="d-inline-block align-top" src="./images/fodse.png" width="100" height="100"
+              style="color: black;" id="logo-iete" />
+            <img class="d-inline-block align-top" src="./images/iete.png" width="100" height="100"
+              style="color: black;" id="logo-iete" />
+          </a>
+          <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="phone-button"
+            onclick="collapse()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" class="nav-link"
+                  style="letter-spacing: 1px; padding: 10px 20px"><span data-bs-target="#navbarNav"
+                    data-bs-toggle="collapse">
+                    Home</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" class="nav-link"
+                  style="letter-spacing: 1px; padding: 10px 20px"><span data-bs-target="#navbarNav"
+                    data-bs-toggle="collapse">
+                    About Us
+                </a></span>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" class="nav-link"
+                  style="letter-spacing: 1px; padding: 10px 20px"><span data-bs-target="#navbarNav"
+                    data-bs-toggle="collapse">
+                    Contact Us</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="fluid-container">
+      <div class="logoed">
+        <div class="parah">
+          <p id="text_svce" style="font-weight:bold;">Sri Venkateswara College of Engineering</p>
+          <p id="text_ece"> Department of Electronics and Communication Engineering </p>
+          <p id="text_ece"> Department of Information Technology </p>
+          <p id="text_iete"> In Association with Forum of Datascience Engineers - SVCE</p>
+          <p id="text_iete">And IETE Chennai Centre</p>
+          <p id="text_p">Proudly Presents</p>
+          <p id="text_make" style="font-weight:bold;">Ease the Error 3.0</p>
+        </div><br><br>
+        <div class="logos_container">
+          <img class="img-fluid" src="./images/svce-removebg-preview.png" id="main_img" />
+          <img class="img-fluid" src="./images/fodse.png" id="main_img" />
+          <!-- <img class="img-fluid" src="./MAKEATHON/images/ECEA logoed.png" id="main_img" /> -->
+          <img class="img-fluid" src="./images/iete.png" id="main_img" />
+          <!-- <img class="img-fluid" src="./MAKEATHON/images/raic logo.png" id="main_img" /> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="timer">
+    <center>
+      <div class="effect"></div>
+    </center>
+    <div class="main_container">
+      <div class="fluid-container">
+        <div class="time-content">
+          <div class="launch-time ">
+            <div>
+              <p id="days">00</p>
+              <span>Days</span>
+            </div>
+            <div>
+              <p id="hours">00</p>
+              <span>Hours </span>
+            </div>
+
+            <div>
+              <p id="minutes">00</p>
+              <span>Minutes</span>
+            </div>
+            <div>
+              <p id="seconds">00</p>
+              <span>Seconds</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="container">
+      <p class="text-center" id="text_reg">Register here for Ease the Error</p>
+      <center>
+        <button class="btn" id="btn-reg" style="color: #edf5e1;"><a href="https://forms.gle/hHhX57CjvWcnumg57"
+            style="text-decoration: none;color: #edf5e1;">Ease the Error 3.0</a></button>
+      </center>
+    </div>
+    <div id="new">
+      <center>
+        <hr>
+      </center>
+    </div>
+  </section>
+
+  <section id="about" class="about section-padding">
+    <div class="container">
+      <div class="row">
+        <h2 id="abt">ABOUT US</h2>
+        <div class="col-lg col-md-12 col-12 col" id="abouted">
+          <div class="about-text">
+            <div class="about-img">
+              <img src="./images/about.gif" class="img-fluid" id="img-abt" />
+            </div>
+
+          </div>
+          <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+
+            <p class="text" id="abt-txt">
+              Ease the Error is the flagship event of the Electronics and Communication Engineering and Information Technology department of Sri
+              Venkateswara College of Engineering.
+              It serves as a platform for the participants to showcase their talents and expertise in project
+              development and deepen their problem-solving skills.
+              After the successful events of Ease the Error 1.0 and 2.0 the Forum of Datascience Engineers (FODSE) &
+              The Institution of Electronics and Telecommunication Engineers Student Forum are set to
+              conduct the “Ease the Error 3.0” as an inter-collegiate event. This event serves as an opportunity for the
+              students to upskill themselves on recent technologies.</p>
+            <button class="btn bg-transparent" id="btn-abt" style="color: #edf5e1;"
+              onclick="location.href = 'https://www.svce.ac.in/';">Read More</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- <section id="about" >
+      <h1 id="abt">ABOUT US</h1>
+        <div class="fluid-container">
+          <div class="row">
+            <div class="col">
+              <img src="./MAKEATHON/images/about.gif" alt="about" id="about-img">
+            </div>
+            <div class="col" id="content">
+            <p id="abt-txt">Make-a-Thon is the flagship event of the Electronics and Communication Engineering department of  Sri Venkateswara College of Engineering. 
+              It serves as a platform for the participants to showcase their talents and expertise in project development and deepen their problem-solving skills.
+              After the successful events of Make-o-thon 1.0,2.0 and 3.0 the Electronics and Communication Engineers Association,
+              The Institution of Electronics and Telecommunication Engineers Student Forum & Robotics and Artificial Intelligence Club are all set to 
+              conduct the “Make-a-Thon 4.0” as an inter-collegiate event. This event serves as an opportunity for the students to upskill themselves on recent technologies.</p>
+              <button class="btn bg-transparent" id="btn-abt" style="color: #edf5e1;" onclick="location.href = 'https://www.svce.ac.in/';">Read More</button>
+        </div>
+        </div>
+        </div>
+    </section> -->
+
+  <section class="timeline">
+    <center>
+      <h1 id="timed">Ease the Error 3.0</h1>
+      <p id="text_time">Save the dates</p><br><br>
+    </center>
+    <ul id="times">
+      <li>
+        <div>
+          <time>6th May 2023</time> Registration starts for Ease the Error 3.0
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>12th May 2023</time> Last date for submitting the Abstract
+        </div>
+      </li>
+      <!-- <li>
+        <div>
+          <time>29th March 2023</time> Release of list of shortlisted teams for Make-a-Thon 4.0
+        </div>
+      </li> -->
+      <li>
+        <div>
+          <time>13th May 2023</time> Completion of registration by the teams
+        </div>
+      </li>
+      <li>
+        <div>
+          <time>15th May 2023 - 16th May 2023</time> Ease the Error event day
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="problem-statements">
+    <center>
+      <h1 id="timed1">PROBLEM STATEMENTS</h1>
+    </center>
+    <div class="container">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item bg-custom1">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed bg-custom1" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              ARTIFICIAL INTELLIGENCE
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse bg-custom" aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <ul>
+                <li>Develop an AI system that can automatically diagnose medical images with highaccuracy</li><br>
+                <li>Create a virtual assistant that can assist users with scheduling, booking appointments, and
+                  answering questions through AI.
+                  </li><br>
+                <li>Develop an AI- driven fraud detection system for online transactions</li><br>
+
+                <li>Create virtual personal shopping assistant that can suggest personalized outfits based on user
+                    preferences and body type using AI .</li><br>
+                <li>Develop an AI-powered chatbot that can provide mental health support to users
+                </li><br>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-custom1">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed bg-custom1" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              MACHINE LEARNING
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse bg-custom" aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <ul>
+                <li>Develop a machine learning model that can accurately detect fake news
+                </li><br>
+                <li>Create a recommendation system that can suggest personalized products or services to
+                  customers based on their previous behavior</li><br>
+                <li>Create a machine learning model that can analyze user behavior and predict their next action</li><br>
+                <li>Develop a machine learning model that can accurately predict stock prices</li><br>
+                <li>Create a machine learning model that can identify and categorize different types of customer
+                  feedback (positive, negative, neutral) in real-time</li><br>
+                <li>Create a machine learning model that can analyze customer behavior and predict their likelihood
+                  to purchase a product or service</li><br>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-custom1">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed bg-custom1" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              FINTECH
+            </button>
+          </h2>
+        
+          <div id="flush-collapseThree" class="accordion-collapse collapse bg-custom"
+            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <ul>
+                <li>Develop a FinTech solution that automates and streamlines financial planning and budgeting
+                  processes for optimal efficiency.</li><br>
+                <li>Develop a FinTech solution that can provide instant loans to customers based on their
+                  creditworthiness</li><br>
+                <li>Create a solution that can simplify and streamline the process of applying for and managing
+                  insurance policies using Fin tech solution.</li><br>
+                <li>Develop a Fin Tech solution that can provide personalized investment advice based on user risk
+                  tolerance and financial goals</li><br>
+                <li>Develop a solution that can help users invest in green and sustainable companies and projects
+                  through Fin Tech solution.</li><br>
+                <li>Develop an integrated platform to provide the information of the courses
+                  offered by Indian universities</li><br>
+                <li>Create a FinTech solution that can provide instant and affordable cross-border remittance
+                  services for migrant workers</li><br>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-custom1">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed bg-custom1" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              CLOUD COMPUTING
+            </button>
+          </h2>          
+          <div id="flush-collapseFour" class="accordion-collapse collapse bg-custom" aria-labelledby="flush-headingFour"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <ul>
+                <li>Develop a cloud-based system for secure and efficient document management</li><br>
+                <li>Create a system for real-time collaboration and communication among remote teams using cloud
+                  computing.</li><br>
+                <li>Develop a cloud-based system for automated website testing and deployment</li><br>
+                <li>Create a system for secure and efficient data backup and recovery through cloud.</li><br>
+                <li>Create a cloud-based system for automating and optimizing inventory management for retail
+                  businesses</li><br>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-custom1">
+          <h2 class="accordion-header" id="flush-headingFive">
+            <button class="accordion-button collapsed bg-custom1" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+              CYBER SECURITY
+            </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse bg-custom" aria-labelledby="flush-headingFive"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <ul>
+                <li>Develop a system that can identify and mitigate DDoS attacks using cybersecurity.</li><br>
+                <li>Create a cybersecurity system that can analyze and prevent insider threats .</li><br>
+                <li>Develop a system that can detect and prevent phishing attacks using cybersecurity.</li><br>
+                <li>Create a system that can detect and protect malware attacks on corporate networks using
+                  cybersecurity.</li><br>
+                <li>Design a cybersecurity solution capable of detecting and addressing weaknesses in web
+                  applications.</li><br>
+                <li>Create a cybersecurity system that can provide safe and private communication channels for
+                  online users.</li><br>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item bg-custom1">
+          <h2 class="accordion-header" id="flush-headingSix">
+            <button class="accordion-button collapsed bg-custom1" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+              BLOCK CHAIN TECHNOLOGY
+            </button>
+          </h2>
+          <div id="flush-collapseSix" class="accordion-collapse collapse bg-custom" aria-labelledby="flush-headingSix"
+            data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <ul>
+                <li>Create a system for secure and transparent donation management using blockchain technology</li><br>
+                <li>Develop a blockchain-based system for safe and transparent identity management</li><br>
+                <li>Create a blockchain-based system for secure and transparent voting
+                </li><br>
+                <li>Develop a system for secure and efficient supply chain management using blockchain
+                  technology.
+                </li><br>
+                <li>Design a system that utilizes blockchain technology to enable secure and effective digital voting
+                  during government elections.
+                </li><br>
+                <li>Create a system for secure and transparent supply chain management in the food industry
+                  through blockchain technology
+                </li><br>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="prob">
+      <p class="text-center" id="text_reged">Abstract format for Ease the Error 3.0</p>
+      <center>
+        <button class="btn" id="btn-reged" style="color: #edf5e1;"><a
+            href="https://docs.google.com/presentation/d/1DjETDq6fYHpY4_26cqbsy1DHQCZoGx_F/edit?usp=drivesdk&ouid=106890627226309191479&rtpof=true&sd=true"
+            style="text-decoration: none; color:#edf5e1;">Download Here</a></button>
+      </center>
+    </div>
+  </section>
+
+  <section id="sponsors">
+    <center>
+      <h1 id="sponsor-head">OUR SPONSORS</h1>
+    </center>
+    <div class="fluid-container">
+      <div class="logoed">
+        <div class="parah">
+
+          <div class="logos_container" id="sponsor_logo">
+            <img class="img-fluid" src="./images/svce-removebg-preview.png" id="main_img" />
+            <img class="img-fluid" src="./images/fodse.png" id="main_img" />
+            <!-- <img class="img-fluid" src="./MAKEATHON/images/ECEA logoed.png" id="main_img" /> -->
+            <img class="img-fluid" src="./images/iete.png" id="main_img" />
+            <!-- <img class="img-fluid" src="./MAKEATHON/images/raic logo.png" id="main_img" /> -->
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <div class="footer-dark">
+    <footer id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 item">
+            <h3>Ease the Error 3.0</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#events">Our Event</a></li>
+              <li><a href="#schedule1">Schedule</a></li>
+
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3 item">
+            <h3>About</h3>
+            <ul>
+              <li><a href="https://www.svce.ac.in/">College</a></li>
+              <li><a href="https://www.svce.ac.in/admission/programs-offered/ ">Admission</a></li>
+              <li><a href="https://www.svce.ac.in/contact-us/">Contact us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 item text">
+            <h3>Sri Venkateswara College of Engineering (SVCE)</h3>
+            <p>A premier self-financing engineering college was started in the year 1985 and is managed by Sri
+              Venkateswara Educational and Health Trust.</p>
+          </div>
+          <div class="col item social">
+            <a href="tel:+91 8754282272 " style="text-decoration: none;"><i class="ri-phone-fill"></i></a>
+            <a href="mailto:fodse@svce.ac.in" style="text-decoration: none;"><i class="ri-mail-fill"></i></a>
+            <a href="https://instagram.com/fodse_svce?igshid=NTc4MTIwNjQ2YQ==" style="text-decoration: none;"><i
+                class="ri-instagram-fill"></i></a>
+            <a href="https://goo.gl/maps/zqrgk34KBbfZ5EKRA" style="text-decoration: none;"><i
+                class="ri-map-pin-2-fill"></i></a>
+          </div>
+        </div>
+        <p class="copyright">Ease the Error 3.0 @ All Rights Reserved</p>
+      </div>
+    </footer>
+  </div>
+  <script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+    });
+
+    var countDownDate = new Date("May 15,2023 00:00:00:00").getTime();
+    console.log(countDownDate);
+    var x = setInterval(function () {
+      var now = new Date().getTime();
+      var distance = countDownDate - now;
+
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      console.log(days);
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("minutes").innerHTML = minutes;
+      document.getElementById("seconds").innerHTML = seconds;
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("days").innerHTML = "00";
+        document.getElementById("hours").innerHTML = "00";
+        document.getElementById("minutes").innerHTML = "00";
+        document.getElementById("seconds").innerHTML = "00";
+      }
+    }, 1000);
+
+    (function () {
+      "use strict";
+
+      // define variables
+      var items = document.querySelectorAll(".timeline li");
+
+      function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+          (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      function callbackFunc() {
+        for (var i = 0; i < items.length; i++) {
+          if (isElementInViewport(items[i])) {
+            items[i].classList.add("in-view");
+          }
+        }
+      }
+
+      // listen for events
+      window.addEventListener("load", callbackFunc);
+      window.addEventListener("resize", callbackFunc);
+      window.addEventListener("scroll", callbackFunc);
+    })();
+
+
+    /*ScrollReveal({
+      reset: true,
+      distance: "60px",
+      duration: 2500,
+      delay: 400,
+    });
+
+    ScrollReveal().reveal("#text_svce, #text_ece, #text_p, #text_iete, #yt, #contact", {
+      delay: 100,
+      origin: "left",
+    });
+    ScrollReveal().reveal("#abt-txt, #btn-abt, #rules-head", {
+      delay: 100,
+      origin: "right",
+    });
+    ScrollReveal().reveal("#text_make, #btn-reg, #ruled", {
+      delay: 200,
+      origin: "left",
+    });
+    ScrollReveal().reveal(".time-content, #mem, #abt, #timed1, #sponsor-head", {
+      delay: 200,
+      origin: "bottom",
+      interval: 100,
+    });
+    ScrollReveal().reveal(".logos_container, #text_reg", {
+      delay: 300,
+      origin: "bottom",
+      interval: 300,
+    });
+    
+    ScrollReveal().reveal("#text_reged, #btn-reged", {
+      delay: 500,
+      origin: "bottom",
+      interval: 100,
+    });*/
+  </script>
+
+</body>
+
+</html>
