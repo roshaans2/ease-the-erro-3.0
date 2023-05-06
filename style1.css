@@ -132,35 +132,35 @@ body::-webkit-scrollbar-thumb
 
 #text_svce{
     font-size: 40px;
-    color: #edf5e1;
+    color: white;
     padding: 1rem 1rem;
     margin: 8px 8px;
 }
 
 #text_ece{
     font-size: 30px;
-    color: #edf5e1;
+    color: white;
     padding: 1rem 1rem;
     margin: 3px 3px;
 }
 
 #text_iete{
     font-size: 30px;
-    color: #edf5e1;
+    color: white;
     padding: 1rem 1rem;
     margin: 3px 3px;
 }
 
 #text_p{
     font-size: 20px;
-    color: #edf5e1;
+    color: white;
     padding: 1rem 1rem;
     margin: 10px 10px;
 }
 
 #text_make{
     font-size: 70px;
-    color: #edf5e1;
+    color: white;
     padding: 1rem 1rem;
     margin: 10px 10px;
 }
