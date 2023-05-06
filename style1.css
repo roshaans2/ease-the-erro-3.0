@@ -434,8 +434,10 @@ font-size: 20px;
 
 .accordion-button:not(.collapsed) {
   color: inherit;
-  background: #d83f87;
-  color: #edf5e1;
+/*   background: #d83f87;
+  color: #edf5e1; */
+  background-color:white;
+  color:black;
 }
 
 .accordion-button:not(.collapsed)::after{
@@ -450,7 +452,8 @@ font-size: 20px;
   color: white;
 }
 .bg-custom{
-  background-color: #44318d;
+/*   background-color: #44318d; */
+   background-color:white;
 }
 
 #problem-statements li{
