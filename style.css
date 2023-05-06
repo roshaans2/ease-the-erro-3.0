@@ -44,7 +44,7 @@ body::-webkit-scrollbar-thumb
 }
 
 #preloader {
-    background: black url(./MAKEATHON/images/preloader.gif) no-repeat center center;
+    background: black url(./images/preloader.gif) no-repeat center center;
     background-size: 10%;
     height: 100vh;
     width: 100%;
@@ -54,7 +54,7 @@ body::-webkit-scrollbar-thumb
 }
 #main{
   /* background: url(./MAKEATHON/images/6004890.jpg); */
-  background: url(./MAKEATHON/images/6004890.jpg); 
+  background: url(./images/6004890.jpg); 
   background-size:cover;
   object-fit: contain;
   background-position: center;
@@ -214,7 +214,7 @@ font-size: 20px;
 }
 
 #about{
-  background: url(./MAKEATHON/images/26154861.jpg);
+  background: url(./images/26154861.jpg);
   background-size:cover;
   object-fit: contain;
   background-position: center;
@@ -267,7 +267,7 @@ font-size: 20px;
 }
 
 #problem-statements{
-  background: url(./MAKEATHON/images/26154861.jpg);
+  background: url(./images/26154861.jpg);
   background-size:cover;
     object-fit: contain;
     background-position: center;
